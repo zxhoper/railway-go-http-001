@@ -10,7 +10,7 @@ func main() {
 
 	http.HandleFunc("/", ExampleHandler)
 
-	log.Println("** Service Started on Port 8080 **")
+	log.Println("Service Started on Port 443")
 	err := http.ListenAndServe(":443", nil)
 	if err != nil {
 		log.Fatal(err)
